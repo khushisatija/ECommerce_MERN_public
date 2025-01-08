@@ -1,0 +1,112 @@
+.listProduct{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 740px;
+    padding: 10px 50px;
+    margin: 30px;
+    border-radius: 6px;
+    background: white;
+}
+
+.listproduct-format-main{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    width: 100%;
+    padding: 20px 0px;
+    color: #454545;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.listproduct-format{
+    display: grid; /* Same grid layout as the header */
+    grid-template-columns: 1fr 3fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    font-weight: 500;
+    width: 100%;
+    text-align: center; 
+}
+
+.listproduct-product-icon{
+    height: 80px;
+    margin: auto;
+}
+
+.listproduct-remove-icon{
+    cursor: pointer;
+    margin: auto;
+}
+
+.listproduct-allproducts{
+    overflow-y: auto ;
+    width: 100%;
+    text-align: center;
+  
+}
+
+@media(max-width: 1000px){
+    .listProduct{
+        box-sizing: border-box;
+        width: 95%;
+        height: 100%;
+        padding: 10px 30px;
+        margin: 20px auto;
+    }
+
+    .listproduct-format-main{
+        padding: 15px 0px;
+        color: #454545;
+        font-size: 12px;
+    }
+
+
+
+    .listproduct-product-icon{
+        height: 60px;
+    }
+}
+@media (max-width: 524px) {
+    .listProduct {
+        box-sizing: border-box;
+        width: 95%; /* Increase width to ensure proper alignment */
+        height: auto; /* Adjust height based on content */
+        padding: 10px 10px; /* Reduce padding for smaller screens */
+        margin: 20px auto;
+    }
+
+    .listproduct-format-main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1.5fr 1fr; /* Simplify to two columns for better readability */
+        gap: 10px; /* Add spacing between items */
+        color: #454545;
+        font-size: 9px; /* Slightly larger font size for readability */
+        width: 100%;
+        padding: 10px 0; /* Add padding for spacing */
+        text-align: center; /* Align text to the left for better readability */
+    }
+
+    .listproduct-format {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1.5fr 1fr; /* Consistent with the header layout */
+        align-items: center; /* Align items vertically */
+        gap: 10px;
+        width: 100%;
+        margin: auto;
+        padding: 10px 0; /* Add spacing between rows */
+    }
+
+    .listproduct-product-icon {
+        height: 50px;
+        margin: auto; /* Center the product image */
+    }
+
+    .listproduct-remove-icon {
+        height: 10px; /* Resize the remove icon */
+        width: 10px;
+        margin: auto; /* Center the remove icon */
+    }
+}
