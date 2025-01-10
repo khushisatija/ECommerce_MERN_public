@@ -19,7 +19,7 @@ if (!fs.existsSync(uploadDir)) {
 }
 
 // Database Connection with MongoDB
-mongoose.connect("mongodb+srv://khushisatija:harekrishna@cluster0.2io29.mongodb.net/e-commerce")
+mongoose.connect("mongodb+srv://{}")
     .then(() => console.log("Connected to MongoDB"))
     .catch((err) => console.error("MongoDB connection error:", err));
 // API Creation
